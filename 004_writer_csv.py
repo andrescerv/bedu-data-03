@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 # CONSTANT
-FILENAME = 'writing_csv.csv'
+FILENAME = 'tmp/writing_csv.csv'
 COLUMN_NAMES = ['employee_id', 'entered_at', 'enter_for']
 MAX_NUMBER_LOGS = 300
 
@@ -39,4 +39,3 @@ with open(FILENAME, mode='w', newline='') as csv_file:
             'enter_for': fake_enter_for()
         })
         counter += 1
-
