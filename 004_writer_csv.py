@@ -6,7 +6,7 @@ from datetime import datetime
 # CONSTANT
 FILENAME = 'tmp/writing_csv.csv'
 COLUMN_NAMES = ['employee_id', 'entered_at', 'enter_for']
-MAX_NUMBER_LOGS = 300
+MAX_NUMBER_LOGS = 100
 
 
 #FUNCTION

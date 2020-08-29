@@ -29,13 +29,13 @@ def image_filename():
     timestamp = datetime.timestamp(now)
     return timestamp
 
-
-
+# IMPLEMENTATION
 username = input('Give me the username:\t')
-user = get_github_user(username)
+user = get_github_user(username) # JSON (list) of the user
 
 if user:
-    user_avatar_url = user.get('avatar_url')
+    user_avatar_url = user.get('avatar_url') # access to the JSON (list) and retrieving element 'avatar_url'
+    print(user_avatar_url)
     download_user_avatar(user_avatar_url)
 else:
     print('User not found')
